@@ -6,6 +6,7 @@ import java.awt.GridLayout;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class GUI {
@@ -17,11 +18,14 @@ public class GUI {
 	        JFrame frame = new JFrame();
 	        JPanel panel = new JPanel();
 	        JButton button = new JButton("Click here");    // cretes the button (1/2)
+	        JLabel label = new JLabel("Number of clicks: 0");   // label quote
+	        
+	        
 	        
 	        panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
 	        panel.setLayout(new GridLayout(0, 1));
 	        panel.add(button); // adds the button (2/2)
-	        
+	        panel.add(label); // displays label on bottom (2/2)
 	        
 	        frame.add(panel, BorderLayout.CENTER);
 	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
