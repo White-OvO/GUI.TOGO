@@ -49,7 +49,7 @@ public class GUI implements ActionListener{
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
 			count++;
-			label.setText("Number of clicks: " + count);
+			label.setText("Number of clicks: " + count); // increases number of clicks
 			
 		}
 
