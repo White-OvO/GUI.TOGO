@@ -1,5 +1,5 @@
 # GUI.TOGO
-# GUI.TOGO
+# GUI that has a click button with a count on it as long as the button is being clicked . The first and last name is also visiable.
 <h1> Gui on java</h1>
 
 
