@@ -1,4 +1,6 @@
 package FirstGUI;
+
+
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -12,8 +14,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class GUI implements ActionListener{
-	// to add a first and last name we need to add a JLabel and JPannel
-	private int count = 0;
+	private int count;
 	private JLabel label;
 	private JFrame frame;
 	private JPanel panel;
@@ -38,19 +39,27 @@ public class GUI implements ActionListener{
 		
 		firstNameField = new JTextField();
 		lastNameField = new JTextField();
-		
+		// first name 
 		namePanel.add(new JLabel("First Name:"));
 		namePanel.add(firstNameField);
+		
+		// last name
 		namePanel.add(new JLabel("Last Name:"));
 		namePanel.add(lastNameField);
 		
-		panel.add(namePanel);
+		
+			
+			panel.add(namePanel);
 		
 		frame.add(panel, BorderLayout.CENTER);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setTitle("Our GUI");  
 		frame.pack();
 		frame.setVisible(true);
+		
+		button = new JButton("Enter First and last Name"); // displays the button text
+		button.addActionListener(this);
+			panel.add(button);
 	}
 
 	public static void main(String[] args) {
@@ -59,7 +68,14 @@ public class GUI implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		count++;
-		label.setText("Number of clicks: " + count); 
+		if (e.getActionCommand().equals("Click here")) {
+			count++;
+			label.setText("Number of clicks: " + count); 
+		} 
+		else if (e.getActionCommand().equals("Enter First and last Name")) {
+			String firstName = firstNameField.getText();
+			String lastName = lastNameField.getText();
+			System.out.println(firstName + " " + lastName);
+		}
 	}
 }
