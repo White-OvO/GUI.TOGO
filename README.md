@@ -7,6 +7,6 @@
 
 
 <h1> UPDATE TO PROJECT 12/31/23 </h1>
-![Screen Shot 2023-12-31 at 3 38 24 AM](https://github.com/White-OvO/GUI.TOGO/assets/120700219/3c503b38-4ade-41e6-b777-b0110e4fb17a)
 
 
+![Screen Shot 2023-12-31 at 3 38 24 AM](https://github.com/White-OvO/GUI.TOGO/assets/120700219/73b6be16-4e9d-4ede-9c46-3b6b2d44af41)
